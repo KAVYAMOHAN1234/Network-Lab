@@ -1,0 +1,95 @@
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders$ mkdir network_lab
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders$ cd network_lab
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab$ mkdir abc ccc baba
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab$ mkdir -p net/sss
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab$ echo "linux"
+linux
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab$ echo "enter ur name"
+enter ur name
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab$ echo -n
+
+
+
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab$ echo -n "kavya"
+kavya
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab$ echo -n "kavya"
+kavyamca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab$ echo "enter ur nameecho "kavya"
+kavya
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab$ echo -n "kavya"
+kavyamca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab$ echo -n "kavya">.txt
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab$ echo -n "kavya">work.txtmca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab$ read age
+22
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab$ echo $age
+22
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab$ cat > newfile.txt
+kavya
+sreedevi 
+kunju
+achu
+jaaaa
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab$ cat newfile.txt
+kavya
+sreedevi 
+kunju
+achu
+jaaaa
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab$ cat >> newfile.txt
+anu     
+jaa
+kaka
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab$ cat newfile.txt
+kavya
+sreedevi 
+kunju
+achu
+jaaaa
+anu
+jaa
+kaka
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab$ cat newfile.txt work.txt
+kavya
+sreedevi 
+kunju
+achu
+jaaaa
+anu
+jaa
+kaka
+kavyamca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab$ cp newfile.txt haa.txt
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab$ cat haa.txt
+kavya
+sreedevi 
+kunju
+achu
+jaaaa
+anu
+jaa
+kaka
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab$ cp haa.txt \ abc
+
+
+
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab$ man ls
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab$ find haa.txt
+haa.txt
+
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab$ find . -type d
+.
+./abc
+./ccc
+./net
+./net/sss
+./baba
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab$ find . -type f
+./abc/haa.txt
+./work.txt
+./.txt
+./ abc
+./haa.txt
+./newfile.txt
+
+
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab$ cp -r abc net
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab$ mv haa.txt aaa.txt
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab$ 
+
