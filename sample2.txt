@@ -1,0 +1,90 @@
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab$ cd abc
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab/abc$ mv work.txt
+mv: missing destination file operand after 'work.txt'
+Try 'mv --help' for more information.
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab/abc$ mv work.txt haa.txt
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab/abc$ cat haa.txt
+kavyamca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab/abc$ echo
+
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab/abc$ cat haa.txt work.txt
+kavyacat: work.txt: No such file or directory
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab/abc$ cat haa.txt 
+kavyamca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab/abc$ cat work.txt 
+cat: work.txt: No such file or directory
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab/abc$ cat aaa.txt 
+kavya
+sreedevi 
+kunju
+achu
+jaaaa
+anu
+jaa
+kaka
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab/abc$ rm haa.txt
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab/abc$ rm abc.txt
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab/abc$ rm aaa.txt
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab/abc$ rm -r ccc
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab/abc$ tar -cvf abcd.tar aa
+tar: aa: Cannot stat: No such file or directory
+tar: Exiting with failure status due to previous errors
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab/abc$ tar -cvf abc.tar aa
+tar: aa: Cannot stat: No such file or directory
+tar: Exiting with failure status due to previous errors
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab/abc$ tar -cvf abc.txt abc
+tar: abc: Cannot stat: No such file or directory
+tar: Exiting with failure status due to previous errors
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab/abc$ tar -cvf abcd.tar abc.txt
+abc.txt
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab/abc$ tar -cvf abcd.tar newfile.txt
+newfile.txt
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab/abc$ wc -l newfile.txt
+8 newfile.txt
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab/abc$ wc -w newfile.txt
+8 newfile.txt
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab/abc$ wc -m newfile.txt
+46 newfile.txt
+mca32@mca32:~/Desktop/kavya/S2/network_lab/abc$ head -n 5 newfile.txt
+kavya
+sreedevi 
+kunju
+achu
+jaaaa
+mca32@mca32:~/Desktop/kavya/S2/network_lab/abc$ tail newfile.txt
+kavya
+sreedevi 
+kunju
+achu
+jaaaa
+anu
+jaa
+kaka
+mca32@mca32:~/Desktop/kavya/S2/network_lab/abc$ tail -n 5 newfile.txt
+achu
+jaaaa
+anu
+jaa
+kaka
+mca32@mca32:~/Desktop/kavya/S2/network_lab/abc$ cut -c 1-5 newfile.txt
+kavya
+sreed
+kunju
+achu
+jaaaa
+anu
+jaa
+kaka
+mca32@mca32:~/Desktop/kavya/S2/network_lab/abc$ paste newfile.txt haa.txt
+kavya	kavya
+sreedevi 	sreedevi 
+kunju	kunju
+achu	achu
+jaaaa	jaaaa
+anu	anu
+jaa	jaa
+kaka	kaka
+mca32@mca32:~/Desktop/kavya/S2/network_lab/abc$ grep -i "annu" newfile.txt 
+mca32@mca32:~/Desktop/kavya/S2/network_lab/abc$ grep -i "kavya" newfile.txt 
+kavya
+mca32@mca32:~/Desktop/kavya/S2/network_lab/abc$ expr length "raa"
+3
+
