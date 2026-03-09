@@ -1,0 +1,208 @@
+mca32@mca32:~/Desktop/kavya/S2/network_lab$ mkdir lab1
+mca32@mca32:~/Desktop/kavya/S2/network_lab$ cd lab1
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ echo "linux lab Experiment"> data.txt
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ cat data.txt
+linux lab Experiment
+
+
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ tail -n 10 data.txt
+linux lab Experiment
+
+
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ cat data.txt
+linux lab Experiment
+
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ 
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ cat > data1.txt
+sheena 
+aliya
+fidha
+shabina
+kavya
+irfana
+mariya
+sneha
+ibrahim^C
+
+
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ tail -n 10 data1.txt
+sheena 
+aliya
+fidha
+shabina
+kavya
+irfana
+mariya
+sneha
+  
+  
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ grep '^$'data1.txt | wcs^C
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ sudo useradd student1
+[sudo] password for mca32: 
+
+
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ sudo passwd student1
+New password: 
+Retype new password: 
+passwd: password updated successfully
+
+
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ sudo touch test.sh
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ sudo chown student1 test.sh
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ sudo chmod 700 test.sh
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ ls -l test.sh
+-rwx------ 1 student1 root 0 Mar  6 15:05 test.sh
+
+
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ cat > STUDENT.txt
+ammu
+kavi
+sreedevi
+lulu MCA
+KEERTHY MCAmca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ grep "MCA" STUDENT.txt
+lulu MCA
+KEERTHY MCA
+
+
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ ssh-keygen
+Generating public/private rsa key pair.
+
+
+nter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/mca32/.ssh/id_rsa
+Your public key has been saved in /home/mca32/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:zrYZEPeEPxsPoj3YcSaa/yKQnq69UBfIyY7rCRdDHUQ mca32@mca32
+The key's randomart image is:
++---[RSA 3072]----+
+|   oE            |
+|   + +   .       |
+|  . * o o .      |
+| . o   + +       |
+|  + o.o S O      |
+|   =o. @ * *     |
+|. +. o= O . .    |
+| + +o .o.=       |
+|  +o+. .+o.      |
++----[SHA256]-----+
+
+
+
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ wc data1.txt
+ 8  8 54 data1.txt
+
+
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ head -n 5 data1.txt
+sheena 
+aliya
+fidha
+shabina
+kavya
+
+
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ touch file1.txt file2.txt file3.txt
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ tar -cvf archive.tar file1.txt file2.txt file3.txt
+file1.txt
+file2.txt
+file3.txt
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ mkdir extracted_files
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ tar -xvf archive.tar -C extracted_files
+file1.txt
+file2.txt
+file3.txt
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ ls extracted_file
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ ls extracted_files
+file1.txt  file2.txt  file3.txt
+
+
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ ls -l final.txt
+-rw-rw-r-- 1 mca32 mca32 39 Mar  6 15:11 final.txt
+
+
+
+
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            3.8G     0  3.8G   0% /dev
+tmpfs           782M  1.7M  780M   1% /run
+/dev/sda5       143G   59G   77G  44% /
+tmpfs           3.9G     0  3.9G   0% /dev/shm
+tmpfs           5.0M  4.0K  5.0M   1% /run/lock
+tmpfs           3.9G     0  3.9G   0% /sys/fs/cgroup
+/dev/loop0      128K  128K     0 100% /snap/bare/5
+/dev/loop3       56M   56M     0 100% /snap/core18/2999
+/dev/loop2       64M   64M     0 100% /snap/core20/2686
+/dev/loop1      1.5G  1.5G     0 100% /snap/android-studio/209
+/dev/loop8      1.6G  1.6G     0 100% /snap/android-studio/205
+/dev/loop7       64M   64M     0 100% /snap/core20/2717
+/dev/loop4       74M   74M     0 100% /snap/core22/2216
+/dev/loop5       56M   56M     0 100% /snap/core18/2979
+/dev/loop6      337M  337M     0 100% /snap/code/226
+/dev/loop13     219M  219M     0 100% /snap/gnome-3-34-1804/72
+/dev/loop11      74M   74M     0 100% /snap/core22/2292
+/dev/loop16      51M   51M     0 100% /snap/snapd/25577
+/dev/loop12     517M  517M     0 100% /snap/gnome-42-2204/202
+/dev/loop10     219M  219M     0 100% /snap/gnome-3-34-1804/93
+/dev/loop17      13M   13M     0 100% /snap/snap-store/1113
+/dev/loop14     517M  517M     0 100% /snap/gnome-42-2204/226
+/dev/loop18      66M   66M     0 100% /snap/gtk-common-themes/1515
+/dev/loop9      346M  346M     0 100% /snap/code/227
+/dev/loop15      13M   13M     0 100% /snap/snap-store/1216
+/dev/loop19      92M   92M     0 100% /snap/gtk-common-themes/1535
+/dev/loop20      49M   49M     0 100% /snap/snapd/25935
+tmpfs           782M   44K  782M   1% /run/user/1000
+
+
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ find . -name "*.txt"
+./result.txt
+./data1.txt
+./file2.txt
+./file3.txt
+./file1.txt
+./data.txt
+./extracted_files/file2.txt
+./extracted_files/file3.txt
+./extracted_files/file1.txt
+./final.txt
+./data2.txt
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ 
+
+
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ ls -l *.txt
+-rw-rw-r-- 1 mca32 mca32 54 Mar  6 14:35 data1.txt
+-rw-rw-r-- 1 mca32 mca32  7 Mar  6 15:23 data2.txt
+-rw-rw-r-- 1 mca32 mca32 21 Mar  6 14:29 data.txt
+-rw-rw-r-- 1 mca32 mca32  0 Mar  6 15:18 file1.txt
+-rw-rw-r-- 1 mca32 mca32  0 Mar  6 15:18 file2.txt
+-rw-rw-r-- 1 mca32 mca32  0 Mar  6 15:18 file3.txt
+-rw-rw-r-- 1 mca32 mca32 39 Mar  6 15:11 final.txt
+-rw-rw-r-- 1 mca32 mca32  0 Mar  6 15:29 result.txt
+
+
+
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ cat > file1.txt
+1 HAA       
+2 KKK
+3 WWW
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ cut -d " " -f1 file1.txt
+1
+2
+3
+
+
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ cut -d " " -f1 file1.txt | paste - file2.txt>result.txt
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ cat result.txt
+1	MCA
+2	BCA
+3	BBA
+
+
+
+
+
+
+
+
+
+
