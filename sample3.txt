@@ -1,0 +1,199 @@
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab$ cd abc
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab/abc$ mv work.txt
+mv: missing destination file operand after 'work.txt'
+Try 'mv --help' for more information.
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab/abc$ mv work.txt haa.txt
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab/abc$ cat haa.txt
+kavyamca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab/abc$ echo
+
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab/abc$ cat haa.txt work.txt
+kavyacat: work.txt: No such file or directory
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab/abc$ cat haa.txt 
+kavyamca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab/abc$ cat work.txt 
+cat: work.txt: No such file or directory
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab/abc$ cat aaa.txt 
+kavya
+sreedevi 
+kunju
+achu
+jaaaa
+anu
+jaa
+kaka
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab/abc$ rm haa.txt
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab/abc$ rm abc.txt
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab/abc$ rm aaa.txt
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab/abc$ rm -r ccc
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab/abc$ tar -cvf abcd.tar aa
+tar: aa: Cannot stat: No such file or directory
+tar: Exiting with failure status due to previous errors
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab/abc$ tar -cvf abc.tar aa
+tar: aa: Cannot stat: No such file or directory
+tar: Exiting with failure status due to previous errors
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab/abc$ tar -cvf abc.txt abc
+tar: abc: Cannot stat: No such file or directory
+tar: Exiting with failure status due to previous errors
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab/abc$ tar -cvf abcd.tar abc.txt
+abc.txt
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab/abc$ tar -cvf abcd.tar newfile.txt
+newfile.txt
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab/abc$ wc -l newfile.txt
+8 newfile.txt
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab/abc$ wc -w newfile.txt
+8 newfile.txt
+mca32@mca32:~/Desktop/kavya/S2/Lab Folders/network_lab/abc$ wc -m newfile.txt
+46 newfile.txt
+mca32@mca32:~/Desktop/kavya/S2/network_lab/abc$ head -n 5 newfile.txt
+kavya
+sreedevi 
+kunju
+achu
+jaaaa
+mca32@mca32:~/Desktop/kavya/S2/network_lab/abc$ tail newfile.txt
+kavya
+sreedevi 
+kunju
+achu
+jaaaa
+anu
+jaa
+kaka
+mca32@mca32:~/Desktop/kavya/S2/network_lab/abc$ tail -n 5 newfile.txt
+achu
+jaaaa
+anu
+jaa
+kaka
+mca32@mca32:~/Desktop/kavya/S2/network_lab/abc$ cut -c 1-5 newfile.txt
+kavya
+sreed
+kunju
+achu
+jaaaa
+anu
+jaa
+kaka
+mca32@mca32:~/Desktop/kavya/S2/network_lab/abc$ paste newfile.txt haa.txt
+kavya	kavya
+sreedevi 	sreedevi 
+kunju	kunju
+achu	achu
+jaaaa	jaaaa
+anu	anu
+jaa	jaa
+kaka	kaka
+mca32@mca32:~/Desktop/kavya/S2/network_lab/abc$ grep -i "annu" newfile.txt 
+mca32@mca32:~/Desktop/kavya/S2/network_lab/abc$ grep -i "kavya" newfile.txt 
+kavya
+mca32@mca32:~/Desktop/kavya/S2/network_lab/abc$ expr length "raa"
+3
+
+
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ ls -l file1.txt
+-rw-r--r-- 1 mca32 mca32 18 Mar  9 11:09 file1.txt
+
+
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ command > file_name
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ wc -l < file1.txt
+3
+
+
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ sudo passwd student1
+[sudo] password for mca32: 
+New password: 
+Retype new password: 
+passwd: password updated successfully
+
+
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            3.8G     0  3.8G   0% /dev
+tmpfs           782M  1.7M  780M   1% /run
+/dev/sda5       143G   59G   77G  44% /
+tmpfs           3.9G     0  3.9G   0% /dev/shm
+tmpfs           5.0M  4.0K  5.0M   1% /run/lock
+tmpfs           3.9G     0  3.9G   0% /sys/fs/cgroup
+/dev/loop0      1.6G  1.6G     0 100% /snap/android-studio/205
+/dev/loop2      128K  128K     0 100% /snap/bare/5
+/dev/loop1       56M   56M     0 100% /snap/core18/2999
+/dev/loop3      337M  337M     0 100% /snap/code/226
+/dev/loop4      1.5G  1.5G     0 100% /snap/android-studio/209
+/dev/loop6      346M  346M     0 100% /snap/code/227
+/dev/loop5       56M   56M     0 100% /snap/core18/2979
+/dev/loop12     517M  517M     0 100% /snap/gnome-42-2204/202
+/dev/loop8       64M   64M     0 100% /snap/core20/2686
+/dev/loop10     219M  219M     0 100% /snap/gnome-3-34-1804/72
+/dev/loop9       74M   74M     0 100% /snap/core22/2292
+/dev/loop14      51M   51M     0 100% /snap/snapd/25577
+/dev/loop17     517M  517M     0 100% /snap/gnome-42-2204/226
+/dev/loop16      66M   66M     0 100% /snap/gtk-common-themes/1515
+/dev/loop13      74M   74M     0 100% /snap/core22/2216
+/dev/loop7       64M   64M     0 100% /snap/core20/2717
+/dev/loop19      13M   13M     0 100% /snap/snap-store/1216
+/dev/loop11     219M  219M     0 100% /snap/gnome-3-34-1804/93
+/dev/loop15      92M   92M     0 100% /snap/gtk-common-themes/1535
+/dev/loop20      13M   13M     0 100% /snap/snap-store/1113
+/dev/loop18      49M   49M     0 100% /snap/snapd/25935
+tmpfs           782M   52K  782M   1% /run/user/1000
+
+
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ ps
+    PID TTY          TIME CMD
+   5450 pts/1    00:00:00 bash
+   6046 pts/1    00:00:00 ps
+
+
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ top
+
+top - 11:45:39 up 46 min,  1 user,  load average: 0.21, 0.32, 0.27
+Tasks: 218 total,   2 running, 216 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.2 us,  0.3 sy,  0.0 ni, 99.4 id,  0.0 wa,  0.0 hi,  0.1 si,  0.0 st
+MiB Mem :   7816.1 total,   2767.7 free,   2382.6 used,   2665.7 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   4757.8 avail Mem 
+ Unknown command - try 'h' for help 
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND  
+    773 mca32     20   0  338908  59116  30040 S   2.3   0.7   0:44.98 Xorg     
+   3828 mca32     20   0  816408  52716  38772 S   2.0   0.7   0:09.69 gnome-t+ 
+    952 mca32     20   0 3878000 278272  83636 S   1.4   3.5   0:56.76 gnome-s
+    
+    
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ ip addr
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eno1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 78:2b:cb:9b:f7:69 brd ff:ff:ff:ff:ff:ff
+    altname enp0s25
+    inet 172.16.2.164/16 brd 172.16.255.255 scope global dynamic noprefixroute eno1
+       valid_lft 83540sec preferred_lft 83540sec
+    inet6 fe80::5828:e813:2a9c:bfa3/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+
+
+mca32@mca32:~/Desktop/kavya/S2/network_lab/lab1$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/mca32/.ssh/id_rsa): kavya
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in kavya
+Your public key has been saved in kavya.pub
+The key fingerprint is:
+SHA256:XnWsBX0aIs+O8KLuPHFu64u/HPPGhZQqk2UYh+biS0M mca32@mca32
+The key's randomart image is:
++---[RSA 3072]----+
+|       .    ..   |
+|      + . . .oo .|
+|     o +   =..++ |
+|    E o + o.o+.  |
+|   o . +S=.+.    |
+|    + =.+.+ o    |
+|   . o B+o .     |
+|    ..ooo+o      |
+|     o==B=.      |
++----[SHA256]-----+
+
+
+
