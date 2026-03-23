@@ -1,0 +1,70 @@
+mca32@mca32:~/Desktop/Kavya/Network/ex 16 to 23$ chmod +x 1.sh
+mca32@mca32:~/Desktop/Kavya/Network/ex 16 to 23$ ./1.sh
+Enter a : 5
+Enter b :10
+After interchange:
+First number = 10
+Second number = 5
+
+
+
+mca32@mca32:~/Desktop/Kavya/Network/ex 16 to 23$ chmod +x 2.sh
+mca32@mca32:~/Desktop/Kavya/Network/ex 16 to 23$ ./2.sh
+Enter basic salary: 20000
+Basic Salary = 20000
+DA = 8000
+HRA = 4000
+Gross Salary = 32000
+
+
+
+mca32@mca32:~/Desktop/Kavya/Network/ex 16 to 23$ chmod +x 3.sh
+mca32@mca32:~/Desktop/Kavya/Network/ex 16 to 23$ ./3.sh
+Enter a number: 5
+1 2 3 4 5 mca32@mca32:~/Desktop/Kavya/Network/ex 16 to 23$ ^C
+mca32@mca32:~/Desktop/Kavya/Network/ex 16 to 23$ 
+
+
+mca32@mca32:~/Desktop/Kavya/Network/ex 16 to 23$ chmod +x 19.sh
+mca32@mca32:~/Desktop/Kavya/Network/ex 16 to 23$ ./19.sh
+Enter first number: 7
+Enter second number: 2
+7 is greater than 2
+Multiplication = 14
+
+
+mca32@mca32:~/Desktop/Kavya/Network/ex 16 to 23$ chmod +x 20.sh
+mca32@mca32:~/Desktop/Kavya/Network/ex 16 to 23$ ./20.sh
+Enter a five digit number: 25874
+Reversed number = 47852
+
+
+mca32@mca32:~/Desktop/Kavya/Network/ex 16 to 23$ chmod +x 21.sh
+mca32@mca32:~/Desktop/Kavya/Network/ex 16 to 23$ ./21.sh
+Enter a number:121
+Palindrome number
+
+
+mca32@mca32:~/Desktop/Kavya/Network/ex 16 to 23$ chmod +x 22.sh
+mca32@mca32:~/Desktop/Kavya/Network/ex 16 to 23$ ./22.sh
+Enter first number: 78
+Enter second number: 74
+Select operation:
+1. Addition
+2. Subtraction
+Enter option: 1
+Addition = 152
+
+
+mca32@mca32:~/Desktop/Kavya/Network/ex 16 to 23$ chmod +x 23.sh
+mca32@mca32:~/Desktop/Kavya/Network/ex 16 to 23$ ./23.sh
+Enter a number: 45
+1. Sum of digits
+2. Reverse of number
+Enter your choice:1
+Sum of digits = 9
+
+
+
+
+
