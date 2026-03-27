@@ -1,0 +1,16 @@
+mca32@mca32:~/Desktop/Kavya/Network/ex 25$ chmod +x 1.sh
+mca32@mca32:~/Desktop/Kavya/Network/ex 25$ ./1.sh
+ Enter two numbers: 5 7
+Sum = 12
+
+
+mca32@mca32:~/Desktop/Kavya/Network/ex 25$ chmod +x 2.sh
+mca32@mca32:~/Desktop/Kavya/Network/ex 25$ ./2.sh
+Enter a number: 6
+6 is Even
+
+
+mca32@mca32:~/Desktop/Kavya/Network/ex 25$ chmod +x 3.sh
+mca32@mca32:~/Desktop/Kavya/Network/ex 25$ ./3.sh
+Enter a number: 5
+Factorial = 120
